@@ -1,0 +1,13 @@
+{
+	"name": "Twitch Auto Channel Points",
+	"version": "0.1.0",
+	"description": "Automatically collects twitch channel points for you!",
+	"manifest_version": 2,
+	"permissions": ["activeTab"],
+	"content_scripts": [
+		{
+			"matches": ["*://*.pcpartpicker.com/"],
+			"js": ["collector.js"]
+		}
+	]
+}
